@@ -22,7 +22,7 @@
                             <td><img src="<?= base_url("/img/" . $k['sampul']); ?>" class="sampul" alt=""></td>
                             <td><?= $k['judul']; ?></td>
                             <td>
-                                <a href="" class="btn btn-success">Detail</a>
+                                <a href="<?= base_url('/komik/' . $k['slug']); ?>" class="btn btn-success">Detail</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
