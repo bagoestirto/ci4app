@@ -7,6 +7,7 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
+            'nav' => "pindex",
             'tittle' => 'Home | Den Bagoes',
             'tes' => ['satu', 'dua', 'tiga']
         ];
@@ -15,6 +16,7 @@ class Pages extends BaseController
     public function about()
     {
         $data = [
+            'nav' => "about",
             'tittle' => 'About | Den Bagoes'
         ];
         return view('pages/about', $data);
@@ -22,6 +24,7 @@ class Pages extends BaseController
     public function contact()
     {
         $data = [
+            'nav' => "contact",
             'tittle' => 'Contact | Den Bagoes',
             'alamat' => [
                 [
