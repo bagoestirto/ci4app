@@ -36,6 +36,10 @@ $routes->get('/', 'Pages::index');
 $routes->get('/komik/create', 'Komik::create');
 $routes->get('/komik/(:segment)', 'Komik::detail/$1'); //$1 adalah untuk ambil get segment (pertama)
 
+$routes->get('dropdown', 'DropdownController::index');
+$routes->get('getState', 'DropdownController::getState');
+$routes->get('getCity', 'DropdownController::getCity');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
