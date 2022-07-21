@@ -40,6 +40,8 @@ $routes->get('dropdown', 'DropdownController::index');
 $routes->get('getState', 'DropdownController::getState');
 $routes->get('getCity', 'DropdownController::getCity');
 
+$routes->get('laporanfpdf', 'Laporanfpdf::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
